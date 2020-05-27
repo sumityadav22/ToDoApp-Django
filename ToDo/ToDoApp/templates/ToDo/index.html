@@ -4,7 +4,7 @@
 {% block content %}
     <div class="container">
         <h1>Add To Do</h1>
-        <form class = "form-inline" action="#" method="post">
+        <form class = "form-inline" action="{% url 'add_todo' %}" method="post">
             {% csrf_token %}
             <div class = 'row'>
                 <div class="col">
@@ -13,5 +13,16 @@
                 </div>
             </div>
         </form>
+    </div>
+
+    <div class="container">
+        <p>Here are some todos</p>
+        {% for todo in todo_item %}
+        <ul class="list-group">
+            <li class="list-group-item">
+                {{ todo.text }}
+            </li>
+          </ul>
+        {% endfor %}
     </div>
 {% endblock %}
