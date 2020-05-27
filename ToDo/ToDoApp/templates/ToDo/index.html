@@ -21,6 +21,12 @@
         <ul class="list-group">
             <li class="list-group-item">
                 {{ todo.text }}
+                <div class = 'float-right'>
+                    <form action="delete_todo/{{ todo.id }}/" method="post">
+                        {% csrf_token %}
+                        <button class="btn btn-sm btn-danger" type="submit">Delete</button>
+                    </form>
+                </div>
             </li>
           </ul>
         {% endfor %}
