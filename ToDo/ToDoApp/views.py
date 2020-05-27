@@ -1,5 +1,9 @@
 from django.shortcuts import render
+from .forms import ToDoForm
 
 # Create your views here
 def Home(request):
-    return render(request,"ToDo/index.html")
+    context = {
+        'form': ToDoForm,
+        }
+    return render(request,"ToDo/index.html",context)

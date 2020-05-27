@@ -8,7 +8,7 @@
             {% csrf_token %}
             <div class = 'row'>
                 <div class="col">
-                    <input type="text" placeholder="Type here...">
+                    {{ form.text }}
                     <input class="btn btn-info" type="submit" value="Add">
                 </div>
             </div>
