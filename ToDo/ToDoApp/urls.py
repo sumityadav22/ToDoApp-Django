@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import AddToDo, DeleteToDo, Home
+from .views import addToDo, deleteToDo, home
 
 urlpatterns = [
-    path('',Home,name = 'home'),
-    path('add_todo/',AddToDo,name = 'add_todo'),
-    path('delete_todo/<int:todo_id>/',DeleteToDo,name = 'delete_todo'),
+    path('',home,name = 'home'),
+    path('add_todo/',addToDo,name = 'add_todo'),
+    path('delete_todo/<int:todo_id>/',deleteToDo,name = 'delete_todo'),
 ]
