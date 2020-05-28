@@ -2,6 +2,12 @@
 <!-- here ToDo/base.html means look in the subdirectory named ToDo and then look for the base.html -->
 {% block title %}To Do App{% endblock %}
 {% block content %}
+    <div class = 'list-group float-right mr-3'>
+        <li class="list-group-item d-flex justify-content-between align-items-center disabled">
+            <strong>total todos</strong>
+            <span class="badge badge-info badge-pill">{{ alltodo }}</span>
+        </li>
+    </div>
     <div class="container">
         <h1>Add To Do</h1>
         <form class = "form-inline" action="{% url 'add_todo' %}" method="post">
@@ -16,7 +22,6 @@
     </div>
 
     <div class="container">
-        <p>Here are some todos</p>
         {% for todo in todo_item %}
         <ul class="list-group">
             <li class="list-group-item">

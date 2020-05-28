@@ -6,7 +6,8 @@ from .models import ToDoModel
 def home(request):
     context = {
         'form': ToDoForm,
-        'todo_item':ToDoModel.objects.all()
+        'todo_item':ToDoModel.objects.all(),
+        'alltodo': ToDoModel.objects.count(),
         }
     return render(request,"ToDo/index.html",context)
 
