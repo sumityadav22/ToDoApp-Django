@@ -1,5 +1,5 @@
 # ToDoApp-Django
-ToDoApp is a project based on python django framework, This app is functional and lets you create your ToDo list, Delete you ToDo list. This app has been developed using python, django farmework, html, bootstrap.
+ToDoApp is a project based on python django framework, This app is functional and it lets you create your ToDo list, Delete you ToDo list as well as it has functionality to speak contents of ToDo list. This app has been developed using Python, Django framework, HTML, Bootstrap.
 
 ## To create a new project
 > django-admin startproject project_name
