@@ -1,0 +1,14 @@
+{% extends 'Todo/base.html' %}
+{% load static %}
+{% block title %}About Us{% endblock %}
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <img class="img-responsive rounded float-right" src='{% static "/images/ProfilePicture.jpg" %}' alt="Something went wrong">
+    <h1 class="display-4">ToDoApp</h1>
+    <p class="lead">
+      ToDoApp is a project based on python django framework, This app is functional and it lets you create your ToDo list, Delete you ToDo list as well as it has functionality to speak contents of ToDo list. This app has been developed using Python, Django framework, HTML, Bootstrap.
+    </p>
+  </div>
+</div>
+{% endblock content %}

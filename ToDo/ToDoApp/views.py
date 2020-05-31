@@ -29,3 +29,6 @@ def speak(request, todo_id):
     text_to_speech.save("voice.mp3")
     os.system("start voice.mp3")
     return redirect('home')
+
+def about(request):
+    return render(request,"Todo/about.html")
